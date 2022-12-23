@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+  background-color: orange;
+  /* color: #fff; */
+}
+
+.wrapper {
+  width: 860px;
+  max-width: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  background-color: rgb(3, 44, 58);
+  justify-content: space-between;
+  padding: 1.5rem;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.navbar > .nav-items {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.navbar > .nav-items a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* .nav-item {
+  flex: 0 0 2rem;
+} */
+
+.main {
+  display: flex;
+  color: #fff;
+  gap: 1.5rem;
+}
+
+.sidebar {
+  background-color: #009;
+  padding: 2rem;
+  flex-basis: 30%;
+}
+
+.services {
+  flex: 2;
+  display: flex;
+}
+
+.sidebar-intro {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.service-item {
+  padding: 2rem;
+  text-align: center;
+  flex: 1;
+  height: 5rem;
+}
+
+.service-item:nth-child(1) {
+  background-color: #a99;
+}
+
+.service-item:nth-child(2) {
+  background-color: #af0;
+}
+
+.service-item:nth-child(3) {
+  background-color: #b00;
+}
+
+footer {
+  background-color: purple;
+  color: #fff;
+  padding: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+  }
+  #logo {
+    margin-bottom: 1.2rem;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .services {
+    order: 1;
+  }
+}
+
+@media (min-width: 650px) {
+}
